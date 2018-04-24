@@ -7,7 +7,7 @@ pip install flask
 confirm:
 >>> import flask
 >>> _
-(venv) vmfreebsd11% export FLASK_APP=microblog.py
-(venv) vmfreebsd11% export LC_ALL=en_US.UTF-8
-(venv) vmfreebsd11% export LANG=en_US.UTF-8
+(microblog) [9:57:43 - 18-04-24] /home/rich/git/microblog % export FLASK_APP=microblog.py
+(microblog) [9:57:43 - 18-04-24] /home/rich/git/microblog % export LC_ALL=en_US.UTF-8
+(microblog) [9:57:43 - 18-04-24] /home/rich/git/microblog % export LANG=en_US.UTF-8
 
