@@ -1,7 +1,7 @@
 create it:
-python3.6 -m venv venv
+python3.6 -m venv microblog
 activate it:
-source venv/bin/activate
+source microblog/bin/activate
 install Flask in it:
 pip install flask
 confirm:
@@ -11,3 +11,4 @@ confirm:
 (microblog) [9:57:43 - 18-04-24] /home/rich/git/microblog % export LC_ALL=en_US.UTF-8
 (microblog) [9:57:43 - 18-04-24] /home/rich/git/microblog % export LANG=en_US.UTF-8
 
+password: 
