@@ -5,9 +5,4 @@
     {% for post in posts %}
     	<div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
     {% endfor %}
-    
-    <div><p>Registered users: {{ users }}</p></div>
-    {% for user in users %}
-    	<div><p>{{ user }}</p></div>
-    {% endfor %}
 {% endblock %}

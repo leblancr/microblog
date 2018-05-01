@@ -6,4 +6,5 @@ export FLASK_DEBUG=0 # must be 0 for email
 export MAIL_SERVER=localhost
 export MAIL_PORT=8025
 source ~/.virtualenvs/microblog/bin/activate
+#flask db upgrade
 #flask run

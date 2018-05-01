@@ -1,10 +1,10 @@
 <html>
     <head>
-        {% if title %}
+    {% if title %}
         <title>{{ title }} - microblog</title>
-        {% else %}
+    {% else %}
         <title>microblog</title>
-        {% endif %}
+    {% endif %}
     </head>
     <body>
         <div>
@@ -18,15 +18,23 @@
 	      {% endif %}
 	    </div>
         <hr>
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <ul>
-            {% for message in messages %}
-            <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %}
+        
+        <div><p>Registered users: {{ users }}</p></div>
+	    {% for user in users %}
+	    	<div><p>{{ user }}</p></div>
+	    {% endfor %}
+	    {% with messages = get_flashed_messages() %}
+	        {% if messages %}
+	        <ul>
+	            {% for message in messages %}
+	            <li>{{ message }}</li>
+	            {% endfor %}
+	        </ul>
+	        {% endif %}
         {% endwith %}
+        <hr>
+	    
         {% block content %}{% endblock %}
+        
     </body>
 </html>
