@@ -16,13 +16,11 @@
 	      	<a href="{{ url_for('user', username=current_user.username) }}">Profile</a>
 	      	<a href="{{ url_for('logout') }}">Logout</a>
 	      {% endif %}
+	      <a href="{{ url_for('explore') }}">Explore</a>
 	    </div>
         <hr>
         
         <div><p>Registered users: {{ users }}</p></div>
-	    {% for user in users %}
-	    	<div><p>{{ user }}</p></div>
-	    {% endfor %}
 	    {% with messages = get_flashed_messages() %}
 	        {% if messages %}
 	        <ul>
@@ -34,7 +32,9 @@
         {% endwith %}
         <hr>
 	    
-        {% block content %}{% endblock %}
+        {% block content %}
+       
+        {% endblock %}
         
     </body>
 </html>
